@@ -7,7 +7,7 @@ int index_concatstr = 0;
 void LPUART1_Config()
 {
 	PCC->PCC_LPUART1 &= ~(1u << 30);				/* Disable clock for select Clock Source */
-	PCC->PCC_LPUART1 |= (6 << 24);					/* Peripheral Clock Source Select PCS */
+	PCC->PCC_LPUART1 |= (1 << 24);					/* Peripheral Clock Source Select PCS SOSC 1, SPLL 6 */
 	PCC->PCC_LPUART1 |= (1 << 30);					/* Enable clock CGC */
 	
 	unsigned int setup_baud = 0;
@@ -43,17 +43,17 @@ void LPUART1_Interrupt_Config()
 
 	PCC->PCC_LPUART1 &= ~(1u << 30);				/* Disable clock for select Clock Source */
 
-	PCC->PCC_LPUART1 |= (1 << 24);					/* Peripheral Clock Source Select PCS SOSC 1, SPLL 6 */
+	PCC->PCC_LPUART1 |= (6 << 24);					/* Peripheral Clock Source Select PCS SOSC 1, SPLL 6 */
 
 	PCC->PCC_LPUART1 |= (1 << 30);					/* Enable clock CGC */
 
 	unsigned int setup_baud = 0;
 
-	setup_baud |= (52 << 0);								/* Modulo Divide Rate SBR, 8M/9600/16~52 */
-	setup_baud |= (15 << 24);								/* Oversampling Ratio OSR, 15+1=16 */
+//	setup_baud |= (52 << 0);								/* Modulo Divide Rate SBR, 8M/9600/16~52 */
+//	setup_baud |= (15 << 24);								/* Oversampling Ratio OSR, 15+1=16 */
 
-//	setup_baud |= (100 << 0);								/* Modulo Divide Rate SBR, 48M/19200/25=100 */
-//	setup_baud |= (24 << 24);								/* Oversampling Ratio OSR, 24+1=25 */
+	setup_baud |= (100 << 0);								/* Modulo Divide Rate SBR, 48M/19200/25=100 */
+	setup_baud |= (24 << 24);								/* Oversampling Ratio OSR, 24+1=25 */
 
 	setup_baud |= (0 << 13);								/* Stop Bit Number SBNS */
 
@@ -66,7 +66,7 @@ void LPUART1_Interrupt_Config()
 //	setup_ctrl |= (1 << 0);									/* Parity Enable PE Enable */
 //	setup_ctrl |= (1 << 1);									/* Parity Type PT Odd Parity */
 
-	setup_ctrl |= (0 << 4);									/* Data Characters Number 8bit 0, 9bit 1 */
+	setup_ctrl |= (1 << 4);									/* Data Characters Number 8bit 0, 9bit 1 */
 	setup_ctrl |= (1 << 18);								/* Receiver Enable RE */
 	setup_ctrl |= (1 << 19);								/* Transmitter Enable TE */
 
@@ -127,7 +127,7 @@ void LPUART1_receive_string()
 void LPUART0_Config()
 {
 	PCC->PCC_LPUART0 &= ~(1u << 30);				/* Disable clock for select Clock Source */
-	PCC->PCC_LPUART0 |= (6 << 24);					/* Peripheral Clock Source Select PCS */
+	PCC->PCC_LPUART0 |= (1 << 24);					/* Peripheral Clock Source Select PCS SOSC 1, SPLL 6 */
 	PCC->PCC_LPUART0 |= (1 << 30);					/* Enable clock CGC */
 	
 	unsigned int setup_baud = 0;
@@ -163,7 +163,7 @@ void LPUART0_Interrupt_Config()
 
 	PCC->PCC_LPUART0 &= ~(1u << 30);				/* Disable clock for select Clock Source */
 
-	PCC->PCC_LPUART0 |= (1 << 24);					/* Peripheral Clock Source Select PCS SOSC 1, SPLL 6 */
+	PCC->PCC_LPUART0 |= (6 << 24);					/* Peripheral Clock Source Select PCS SOSC 1, SPLL 6 */
 
 	PCC->PCC_LPUART0 |= (1 << 30);					/* Enable clock CGC */
 
