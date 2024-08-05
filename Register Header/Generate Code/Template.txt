@@ -1,0 +1,37 @@
+/*
+** ###################################################################
+**     Processor:           S32K144
+**     Compiler:            Keil ARM C/C++ Compiler
+**     Version:             rev. 1.0, <NOW>
+**
+**     Abstract:
+**         Peripheral Access Layer for module <MSN>
+**     Author: <NAME_OF_STUDENT>
+**
+** ###################################################################
+*/
+
+/* Prevention from multiple including the same memory map */
+#if !defined(<MSN>_REGISTER_H_)  /* Check if memory map has not been already included */
+#define <MSN>_REGISTER_H_  
+
+/* ----------------------------------------------------------------------------
+   -- Peripheral Access Layer
+   ---------------------------------------------------------------------------- */
+/* <MSN>  */
+typedef struct {
+  /* Description register REGISTER_1 /* 
+  volatile const unsigned int REGISTER_1;
+  /* Description register REGISTER_1 /* 
+  volatile unsigned int       REGISTER_2;
+  /* Add the dummy byte data to fulfill struct /* 
+  unsigned int                dummy;
+  ..........
+} <MSN>_Type;
+
+#define <MSN>_BASE_ADDRS (<Base_Address>)
+#define <MSN> ((<MSN>_Type*)<MSN>_BASE_ADDRS)
+
+..........
+
+#endif  /* #if !defined(<MSN>_REGISTER_H_) */

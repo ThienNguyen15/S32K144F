@@ -1,0 +1,412 @@
+Base address,Peripheral name,Offset,Register name,Description register name,Width,Access
+0x40064000,SCG,0x0,SCG_VERID,Version ID Register,32,RO
+,,0x4,SCG_PARAM,Parameter Register,32,RO
+,,0x10,SCG_CSR,Clock Status Register,32,RO
+,,0x14,SCG_RCCR,Run Clock Control Register,32,RW
+,,0x18,SCG_VCCR,VLPR Clock Control Register,32,RW
+,,0x1C,SCG_HCCR,HSRUN Clock Control Register,32,RW
+,,0x20,SCG_CLKOUTCNFG,SCG CLKOUT Configuration Register,32,RW
+,,0x100,SCG_SOSCCSR,System OSC Control Status Register,32,RW
+,,0x104,SCG_SOSCDIV,System OSC Divide Register,32,RW
+,,0x108,SCG_SOSCCFG,System Oscillator Configuration Register,32,RW
+,,0x200,SCG_SIRCCSR,Slow IRC Control Status Register,32,RW
+,,0x204,SCG_SIRCDIV,Slow IRC Divide Register,32,RW
+,,0x208,SCG_SIRCCFG,Slow IRC Configuration Register,32,RW
+,,0x300,SCG_FIRCCSR,Fast IRC Control Status Register,32,RW
+,,0x304,SCG_FIRCDIV,Fast IRC Divide Register,32,RW
+,,0x308,SCG_FIRCCFG,Fast IRC Configuration Register,32,RW
+,,0x600,SCG_SPLLCSR,System PLL Control Status Register,32,RW
+,,0x604,SCG_SPLLDIV,System PLL Divide Register,32,RW
+,,0x608,SCG_SPLLCFG,System PLL Configuration Register,32,RW
+0x40065000,PCC,0x80,PCC_FTFC,PCC FTFC Register,32,RW
+,,0x84,PCC_DMAMUX,PCC DMAMUX Register,32,RW
+,,0x90,PCC_FlexCAN0,PCC FlexCAN0 Register,32,RW
+,,0x94,PCC_FlexCAN1,PCC FlexCAN1 Register,32,RW
+,,0x98,PCC_FTM3,PCC FTM3 Register,32,RW
+,,0x9C,PCC_ADC1,PCC ADC1 Register,32,RW
+,,0xAC,PCC_FlexCAN2,PCC FlexCAN2 Register,32,RW
+,,0xB0,PCC_LPSPI0,PCC LPSPI0 Register,32,RW
+,,0xB4,PCC_LPSPI1,PCC LPSPI1 Register,32,RW
+,,0xB8,PCC_LPSPI2,PCC LPSPI2 Register,32,RW
+,,0xC4,PCC_PDB1,PCC PDB1 Register,32,RW
+,,0xC8,PCC_CRC,PCC CRC Register,32,RW
+,,0xD8,PCC_PDB0,PCC PDB0 Register,32,RW
+,,0xDC,PCC_LPIT,PCC LPIT Register,32,RW
+,,0xE0,PCC_FTM0,PCC FTM0 Register,32,RW
+,,0xE4,PCC_FTM1,PCC FTM1 Register,32,RW
+,,0xE8,PCC_FTM2,PCC FTM2 Register,32,RW
+,,0xEC,PCC_ADC0,PCC ADC0 Register,32,RW
+,,0xF4,PCC_RTC,PCC RTC Register,32,RW
+,,0x100,PCC_LPTMR0,PCC LPTMR0 Register,32,RW
+,,0x124,PCC_PORTA,PCC PORTA Register,32,RW
+,,0x128,PCC_PORTB,PCC PORTB Register,32,RW
+,,0x12C,PCC_PORTC,PCC PORTC Register,32,RW
+,,0x130,PCC_PORTD,PCC PORTD Register,32,RW
+,,0x134,PCC_PORTE,PCC PORTE Register,32,RW
+,,0x150,PCC_SAI0,PCC SAI0 Register,32,RW
+,,0x154,PCC_SAI1,PCC SAI1 Register,32,RW
+,,0x168,PCC_FlexIO,PCC FlexIO Register,32,RW
+,,0x184,PCC_EWM,PCC EWM Register,32,RW
+,,0x198,PCC_LPI2C0,PCC LPI2C0 Register,32,RW
+,,0x19C,PCC_LPI2C1,PCC LPI2C1 Register,32,RW
+,,0x1A8,PCC_LPUART0,PCC LPUART0 Register,32,RW
+,,0x1AC,PCC_LPUART1,PCC LPUART1 Register,32,RW
+,,0x1B0,PCC_LPUART2,PCC LPUART2 Register,32,RW
+,,0x1B8,PCC_FTM4,PCC FTM4 Register,32,RW
+,,0x1BC,PCC_FTM5,PCC FTM5 Register,32,RW
+,,0x1C0,PCC_FTM6,PCC FTM6 Register,32,RW
+,,0x1C4,PCC_FTM7,PCC FTM7 Register,32,RW
+,,0x1CC,PCC_CMP0,PCC CMP0 Register,32,RW
+,,0x1D8,PCC_QSPI,PCC QSPI Register,32,RW
+,,0x1E4,PCC_ENET,PCC ENET Register,32,RW
+0x400FF000,GPIOA,0x0,PDOR,Port Data Output Register,32,RW
+,,0x4,PSOR,Port Set Output Register,32,WORZ
+,,0x8,PCOR,Port Clear Output Register,32,WORZ
+,,0xC,PTOR,Port Toggle Output Register,32,WORZ
+,,0x10,PDIR,Port Data Input Register,32,RO
+,,0x14,PDDR,Port Data Direction Register,32,RW
+,,0x18,PIDR,Port Input Disable Register,32,RW
+0x400FF040,GPIOB,0x0,PDOR,Port Data Output Register,32,RW
+,,0x4,PSOR,Port Set Output Register,32,WORZ
+,,0x8,PCOR,Port Clear Output Register,32,WORZ
+,,0xC,PTOR,Port Toggle Output Register,32,WORZ
+,,0x10,PDIR,Port Data Input Register,32,RO
+,,0x14,PDDR,Port Data Direction Register,32,RW
+,,0x18,PIDR,Port Input Disable Register,32,RW
+0x400FF080,GPIOC,0x0,PDOR,Port Data Output Register,32,RW
+,,0x4,PSOR,Port Set Output Register,32,WORZ
+,,0x8,PCOR,Port Clear Output Register,32,WORZ
+,,0xC,PTOR,Port Toggle Output Register,32,WORZ
+,,0x10,PDIR,Port Data Input Register,32,RO
+,,0x14,PDDR,Port Data Direction Register,32,RW
+,,0x18,PIDR,Port Input Disable Register,32,RW
+0x400FF0C0,GPIOD,0x0,PDOR,Port Data Output Register,32,RW
+,,0x4,PSOR,Port Set Output Register,32,WORZ
+,,0x8,PCOR,Port Clear Output Register,32,WORZ
+,,0xC,PTOR,Port Toggle Output Register,32,WORZ
+,,0x10,PDIR,Port Data Input Register,32,RO
+,,0x14,PDDR,Port Data Direction Register,32,RW
+,,0x18,PIDR,Port Input Disable Register,32,RW
+0x400FF100,GPIOE,0x0,PDOR,Port Data Output Register,32,RW
+,,0x4,PSOR,Port Set Output Register,32,WORZ
+,,0x8,PCOR,Port Clear Output Register,32,WORZ
+,,0xC,PTOR,Port Toggle Output Register,32,WORZ
+,,0x10,PDIR,Port Data Input Register,32,RO
+,,0x14,PDDR,Port Data Direction Register,32,RW
+,,0x18,PIDR,Port Input Disable Register,32,RW
+0x4006A000,LPUART0,0x0,VERID,Version ID Register,32,RO
+,,0x4,PARAM,Parameter Register,32,RO
+,,0x8,GLOBAL,LPUART Global Register,32,RW
+,,0xC,PINCFG,LPUART Pin Configuration Register,32,RW
+,,0x10,BAUD,LPUART Baud Rate Register,32,RW
+,,0x14,STAT,LPUART Status Register,32,RW
+,,0x18,CTRL,LPUART Control Register,32,RW
+,,0x1C,DATA,LPUART Data Register,32,RW
+,,0x20,MATCH,LPUART Match Address Register,32,RW
+,,0x24,MODIR,LPUART Modern IrDA Register,32,RW
+,,0x28,FIFO,LPUART FIFO Register,32,RW
+,,0x2C,WATER,LPUART Watermark Register,32,RW
+0x4006B000,LPUART1,0x0,VERID,Version ID Register,32,RO
+,,0x4,PARAM,Parameter Register,32,RO
+,,0x8,GLOBAL,LPUART Global Register,32,RW
+,,0xC,PINCFG,LPUART Pin Configuration Register,32,RW
+,,0x10,BAUD,LPUART Baud Rate Register,32,RW
+,,0x14,STAT,LPUART Status Register,32,RW
+,,0x18,CTRL,LPUART Control Register,32,RW
+,,0x1C,DATA,LPUART Data Register,32,RW
+,,0x20,MATCH,LPUART Match Address Register,32,RW
+,,0x24,MODIR,LPUART Modern IrDA Register,32,RW
+,,0x28,FIFO,LPUART FIFO Register,32,RW
+,,0x2C,WATER,LPUART Watermark Register,32,RW
+0x4006C000,LPUART2,0x0,VERID,Version ID Register,32,RO
+,,0x4,PARAM,Parameter Register,32,RO
+,,0x8,GLOBAL,LPUART Global Register,32,RW
+,,0xC,PINCFG,LPUART Pin Configuration Register,32,RW
+,,0x10,BAUD,LPUART Baud Rate Register,32,RW
+,,0x14,STAT,LPUART Status Register,32,RW
+,,0x18,CTRL,LPUART Control Register,32,RW
+,,0x1C,DATA,LPUART Data Register,32,RW
+,,0x20,MATCH,LPUART Match Address Register,32,RW
+,,0x24,MODIR,LPUART Modern IrDA Register,32,RW
+,,0x28,FIFO,LPUART FIFO Register,32,RW
+,,0x2C,WATER,LPUART Watermark Register,32,RW
+0x40049000,PORTA,0x0,PORT_PCR0,Pin Control Register n,32,RW
+,,0x4,PORT_PCR1,Pin Control Register n,32,RW
+,,0x8,PORT_PCR2,Pin Control Register n,32,RW
+,,0xC,PORT_PCR3,Pin Control Register n,32,RW
+,,0x10,PORT_PCR4,Pin Control Register n,32,RW
+,,0x14,PORT_PCR5,Pin Control Register n,32,RW
+,,0x18,PORT_PCR6,Pin Control Register n,32,RW
+,,0x1C,PORT_PCR7,Pin Control Register n,32,RW
+,,0x20,PORT_PCR8,Pin Control Register n,32,RW
+,,0x24,PORT_PCR9,Pin Control Register n,32,RW
+,,0x28,PORT_PCR10,Pin Control Register n,32,RW
+,,0x2C,PORT_PCR11,Pin Control Register n,32,RW
+,,0x30,PORT_PCR12,Pin Control Register n,32,RW
+,,0x34,PORT_PCR13,Pin Control Register n,32,RW
+,,0x38,PORT_PCR14,Pin Control Register n,32,RW
+,,0x3C,PORT_PCR15,Pin Control Register n,32,RW
+,,0x40,PORT_PCR16,Pin Control Register n,32,RW
+,,0x44,PORT_PCR17,Pin Control Register n,32,RW
+,,0x48,PORT_PCR18,Pin Control Register n,32,RW
+,,0x4C,PORT_PCR19,Pin Control Register n,32,RW
+,,0x50,PORT_PCR20,Pin Control Register n,32,RW
+,,0x54,PORT_PCR21,Pin Control Register n,32,RW
+,,0x58,PORT_PCR22,Pin Control Register n,32,RW
+,,0x5C,PORT_PCR23,Pin Control Register n,32,RW
+,,0x60,PORT_PCR24,Pin Control Register n,32,RW
+,,0x64,PORT_PCR25,Pin Control Register n,32,RW
+,,0x68,PORT_PCR26,Pin Control Register n,32,RW
+,,0x6C,PORT_PCR27,Pin Control Register n,32,RW
+,,0x70,PORT_PCR28,Pin Control Register n,32,RW
+,,0x74,PORT_PCR29,Pin Control Register n,32,RW
+,,0x78,PORT_PCR30,Pin Control Register n,32,RW
+,,0x7C,PORT_PCR31,Pin Control Register n,32,RW
+,,0x80,PORT_GPCLR,Global Pin Control Low Register,32,W
+,,0x84,PORT_GPCHR,Global Pin Control High Register,32,W
+,,0x88,PORT_GICLR,Global Interrupt Control Low Register,32,W
+,,0x8C,PORT_GICHR,Global Interrupt Control High Register,32,W
+,,0xA0,PORT_ISFR,Interrupt Status Flag Register,32,w1c
+,,0xC0,PORT_DFER,Digital Filter Enable Register,32,RW
+,,0xC4,PORT_DFCR,Digital Filter Clock Register,32,RW
+,,0xC8,PORT_DFWR,Digital Filter Width Register,32,RW
+0x4004A000,PORTB,0x0,PORT_PCR0,Pin Control Register n,32,RW
+,,0x4,PORT_PCR1,Pin Control Register n,32,RW
+,,0x8,PORT_PCR2,Pin Control Register n,32,RW
+,,0xC,PORT_PCR3,Pin Control Register n,32,RW
+,,0x10,PORT_PCR4,Pin Control Register n,32,RW
+,,0x14,PORT_PCR5,Pin Control Register n,32,RW
+,,0x18,PORT_PCR6,Pin Control Register n,32,RW
+,,0x1C,PORT_PCR7,Pin Control Register n,32,RW
+,,0x20,PORT_PCR8,Pin Control Register n,32,RW
+,,0x24,PORT_PCR9,Pin Control Register n,32,RW
+,,0x28,PORT_PCR10,Pin Control Register n,32,RW
+,,0x2C,PORT_PCR11,Pin Control Register n,32,RW
+,,0x30,PORT_PCR12,Pin Control Register n,32,RW
+,,0x34,PORT_PCR13,Pin Control Register n,32,RW
+,,0x38,PORT_PCR14,Pin Control Register n,32,RW
+,,0x3C,PORT_PCR15,Pin Control Register n,32,RW
+,,0x40,PORT_PCR16,Pin Control Register n,32,RW
+,,0x44,PORT_PCR17,Pin Control Register n,32,RW
+,,0x48,PORT_PCR18,Pin Control Register n,32,RW
+,,0x4C,PORT_PCR19,Pin Control Register n,32,RW
+,,0x50,PORT_PCR20,Pin Control Register n,32,RW
+,,0x54,PORT_PCR21,Pin Control Register n,32,RW
+,,0x58,PORT_PCR22,Pin Control Register n,32,RW
+,,0x5C,PORT_PCR23,Pin Control Register n,32,RW
+,,0x60,PORT_PCR24,Pin Control Register n,32,RW
+,,0x64,PORT_PCR25,Pin Control Register n,32,RW
+,,0x68,PORT_PCR26,Pin Control Register n,32,RW
+,,0x6C,PORT_PCR27,Pin Control Register n,32,RW
+,,0x70,PORT_PCR28,Pin Control Register n,32,RW
+,,0x74,PORT_PCR29,Pin Control Register n,32,RW
+,,0x78,PORT_PCR30,Pin Control Register n,32,RW
+,,0x7C,PORT_PCR31,Pin Control Register n,32,RW
+,,0x80,PORT_GPCLR,Global Pin Control Low Register,32,W
+,,0x84,PORT_GPCHR,Global Pin Control High Register,32,W
+,,0x88,PORT_GICLR,Global Interrupt Control Low Register,32,W
+,,0x8C,PORT_GICHR,Global Interrupt Control High Register,32,W
+,,0xA0,PORT_ISFR,Interrupt Status Flag Register,32,w1c
+,,0xC0,PORT_DFER,Digital Filter Enable Register,32,RW
+,,0xC4,PORT_DFCR,Digital Filter Clock Register,32,RW
+,,0xC8,PORT_DFWR,Digital Filter Width Register,32,RW
+0x4004B000,PORTC,0x0,PORT_PCR0,Pin Control Register n,32,RW
+,,0x4,PORT_PCR1,Pin Control Register n,32,RW
+,,0x8,PORT_PCR2,Pin Control Register n,32,RW
+,,0xC,PORT_PCR3,Pin Control Register n,32,RW
+,,0x10,PORT_PCR4,Pin Control Register n,32,RW
+,,0x14,PORT_PCR5,Pin Control Register n,32,RW
+,,0x18,PORT_PCR6,Pin Control Register n,32,RW
+,,0x1C,PORT_PCR7,Pin Control Register n,32,RW
+,,0x20,PORT_PCR8,Pin Control Register n,32,RW
+,,0x24,PORT_PCR9,Pin Control Register n,32,RW
+,,0x28,PORT_PCR10,Pin Control Register n,32,RW
+,,0x2C,PORT_PCR11,Pin Control Register n,32,RW
+,,0x30,PORT_PCR12,Pin Control Register n,32,RW
+,,0x34,PORT_PCR13,Pin Control Register n,32,RW
+,,0x38,PORT_PCR14,Pin Control Register n,32,RW
+,,0x3C,PORT_PCR15,Pin Control Register n,32,RW
+,,0x40,PORT_PCR16,Pin Control Register n,32,RW
+,,0x44,PORT_PCR17,Pin Control Register n,32,RW
+,,0x48,PORT_PCR18,Pin Control Register n,32,RW
+,,0x4C,PORT_PCR19,Pin Control Register n,32,RW
+,,0x50,PORT_PCR20,Pin Control Register n,32,RW
+,,0x54,PORT_PCR21,Pin Control Register n,32,RW
+,,0x58,PORT_PCR22,Pin Control Register n,32,RW
+,,0x5C,PORT_PCR23,Pin Control Register n,32,RW
+,,0x60,PORT_PCR24,Pin Control Register n,32,RW
+,,0x64,PORT_PCR25,Pin Control Register n,32,RW
+,,0x68,PORT_PCR26,Pin Control Register n,32,RW
+,,0x6C,PORT_PCR27,Pin Control Register n,32,RW
+,,0x70,PORT_PCR28,Pin Control Register n,32,RW
+,,0x74,PORT_PCR29,Pin Control Register n,32,RW
+,,0x78,PORT_PCR30,Pin Control Register n,32,RW
+,,0x7C,PORT_PCR31,Pin Control Register n,32,RW
+,,0x80,PORT_GPCLR,Global Pin Control Low Register,32,W
+,,0x84,PORT_GPCHR,Global Pin Control High Register,32,W
+,,0x88,PORT_GICLR,Global Interrupt Control Low Register,32,W
+,,0x8C,PORT_GICHR,Global Interrupt Control High Register,32,W
+,,0xA0,PORT_ISFR,Interrupt Status Flag Register,32,w1c
+,,0xC0,PORT_DFER,Digital Filter Enable Register,32,RW
+,,0xC4,PORT_DFCR,Digital Filter Clock Register,32,RW
+,,0xC8,PORT_DFWR,Digital Filter Width Register,32,RW
+0x4004C000,PORTD,0x0,PORT_PCR0,Pin Control Register n,32,RW
+,,0x4,PORT_PCR1,Pin Control Register n,32,RW
+,,0x8,PORT_PCR2,Pin Control Register n,32,RW
+,,0xC,PORT_PCR3,Pin Control Register n,32,RW
+,,0x10,PORT_PCR4,Pin Control Register n,32,RW
+,,0x14,PORT_PCR5,Pin Control Register n,32,RW
+,,0x18,PORT_PCR6,Pin Control Register n,32,RW
+,,0x1C,PORT_PCR7,Pin Control Register n,32,RW
+,,0x20,PORT_PCR8,Pin Control Register n,32,RW
+,,0x24,PORT_PCR9,Pin Control Register n,32,RW
+,,0x28,PORT_PCR10,Pin Control Register n,32,RW
+,,0x2C,PORT_PCR11,Pin Control Register n,32,RW
+,,0x30,PORT_PCR12,Pin Control Register n,32,RW
+,,0x34,PORT_PCR13,Pin Control Register n,32,RW
+,,0x38,PORT_PCR14,Pin Control Register n,32,RW
+,,0x3C,PORT_PCR15,Pin Control Register n,32,RW
+,,0x40,PORT_PCR16,Pin Control Register n,32,RW
+,,0x44,PORT_PCR17,Pin Control Register n,32,RW
+,,0x48,PORT_PCR18,Pin Control Register n,32,RW
+,,0x4C,PORT_PCR19,Pin Control Register n,32,RW
+,,0x50,PORT_PCR20,Pin Control Register n,32,RW
+,,0x54,PORT_PCR21,Pin Control Register n,32,RW
+,,0x58,PORT_PCR22,Pin Control Register n,32,RW
+,,0x5C,PORT_PCR23,Pin Control Register n,32,RW
+,,0x60,PORT_PCR24,Pin Control Register n,32,RW
+,,0x64,PORT_PCR25,Pin Control Register n,32,RW
+,,0x68,PORT_PCR26,Pin Control Register n,32,RW
+,,0x6C,PORT_PCR27,Pin Control Register n,32,RW
+,,0x70,PORT_PCR28,Pin Control Register n,32,RW
+,,0x74,PORT_PCR29,Pin Control Register n,32,RW
+,,0x78,PORT_PCR30,Pin Control Register n,32,RW
+,,0x7C,PORT_PCR31,Pin Control Register n,32,RW
+,,0x80,PORT_GPCLR,Global Pin Control Low Register,32,W
+,,0x84,PORT_GPCHR,Global Pin Control High Register,32,W
+,,0x88,PORT_GICLR,Global Interrupt Control Low Register,32,W
+,,0x8C,PORT_GICHR,Global Interrupt Control High Register,32,W
+,,0xA0,PORT_ISFR,Interrupt Status Flag Register,32,w1c
+,,0xC0,PORT_DFER,Digital Filter Enable Register,32,RW
+,,0xC4,PORT_DFCR,Digital Filter Clock Register,32,RW
+,,0xC8,PORT_DFWR,Digital Filter Width Register,32,RW
+0x4004D000,PORTE,0x0,PORT_PCR0,Pin Control Register n,32,RW
+,,0x4,PORT_PCR1,Pin Control Register n,32,RW
+,,0x8,PORT_PCR2,Pin Control Register n,32,RW
+,,0xC,PORT_PCR3,Pin Control Register n,32,RW
+,,0x10,PORT_PCR4,Pin Control Register n,32,RW
+,,0x14,PORT_PCR5,Pin Control Register n,32,RW
+,,0x18,PORT_PCR6,Pin Control Register n,32,RW
+,,0x1C,PORT_PCR7,Pin Control Register n,32,RW
+,,0x20,PORT_PCR8,Pin Control Register n,32,RW
+,,0x24,PORT_PCR9,Pin Control Register n,32,RW
+,,0x28,PORT_PCR10,Pin Control Register n,32,RW
+,,0x2C,PORT_PCR11,Pin Control Register n,32,RW
+,,0x30,PORT_PCR12,Pin Control Register n,32,RW
+,,0x34,PORT_PCR13,Pin Control Register n,32,RW
+,,0x38,PORT_PCR14,Pin Control Register n,32,RW
+,,0x3C,PORT_PCR15,Pin Control Register n,32,RW
+,,0x40,PORT_PCR16,Pin Control Register n,32,RW
+,,0x44,PORT_PCR17,Pin Control Register n,32,RW
+,,0x48,PORT_PCR18,Pin Control Register n,32,RW
+,,0x4C,PORT_PCR19,Pin Control Register n,32,RW
+,,0x50,PORT_PCR20,Pin Control Register n,32,RW
+,,0x54,PORT_PCR21,Pin Control Register n,32,RW
+,,0x58,PORT_PCR22,Pin Control Register n,32,RW
+,,0x5C,PORT_PCR23,Pin Control Register n,32,RW
+,,0x60,PORT_PCR24,Pin Control Register n,32,RW
+,,0x64,PORT_PCR25,Pin Control Register n,32,RW
+,,0x68,PORT_PCR26,Pin Control Register n,32,RW
+,,0x6C,PORT_PCR27,Pin Control Register n,32,RW
+,,0x70,PORT_PCR28,Pin Control Register n,32,RW
+,,0x74,PORT_PCR29,Pin Control Register n,32,RW
+,,0x78,PORT_PCR30,Pin Control Register n,32,RW
+,,0x7C,PORT_PCR31,Pin Control Register n,32,RW
+,,0x80,PORT_GPCLR,Global Pin Control Low Register,32,W
+,,0x84,PORT_GPCHR,Global Pin Control High Register,32,W
+,,0x88,PORT_GICLR,Global Interrupt Control Low Register,32,W
+,,0x8C,PORT_GICHR,Global Interrupt Control High Register,32,W
+,,0xA0,PORT_ISFR,Interrupt Status Flag Register,32,w1c
+,,0xC0,PORT_DFER,Digital Filter Enable Register,32,RW
+,,0xC4,PORT_DFCR,Digital Filter Clock Register,32,RW
+,,0xC8,PORT_DFWR,Digital Filter Width Register,32,RW
+0x40037000,LPIT,0x00,VERID,Version ID Register,32,RO
+,,0x04,PARAM,Parameter Register,32,RO
+,,0x08,MCR,Module Control Register,32,RW
+,,0x0C,MSR,Module Status Register,32,W1C
+,,0x10,MIER,Module Interrupt Enable Register,32,RW
+,,0x14,SETTEN,Set Timer Enable Register,32,RW
+,,0x18,CLRTEN,Clear Timer Enable Register,32,WORZ
+,,0x20,TVAL0,Timer Value Register,32,RW
+,,0x24,CVAL0,Current Timer Value,32,RO
+,,0x28,TCTRL0,Timer Control Register,32,RW
+,,0x30,TVAL1,Timer Value Register,32,RW
+,,0x34,CVAL1,Current Timer Value,32,RO
+,,0x38,TCTRL1,Timer Control Register,32,RW
+,,0x40,TVAL2,Timer Value Register,32,RW
+,,0x44,CVAL2,Current Timer Value,32,RO
+,,0x48,TCTRL2,Timer Control Register,32,RW
+,,0x50,TVAL3,Timer Value Register,32,RW
+,,0x54,CVAL3,Current Timer Value,32,RO
+,,0x58,TCTRL3,Timer Control Register,32,RW
+0x4007E000,SMC,0x00,SMC_VERID,SMC Version ID Register,32,R
+,,0x04,SMC_PARAM,SMC Parameter Register,32,R
+,,0x08,SMC_PMPROT,Power Mode Protection register,32,RW
+,,0x0C,SMC_PMCTRL,Power Mode Control register,32,RW
+,,0x10,SMC_STOPCTRL,Stop Control Register,32,RW
+,,0x14,SMC_PMSTAT,Power Mode Status register,32,R
+0xE000E010,ST,0x00,ST_CTRL,SysTick Control and Status,32,RW
+,,0x04,ST_RLD,SysTick Reload Value Register,32,RW
+,,0x08,ST_CURR,SysTick Current Value Register,32,RW
+,,0x0C,ST_CALIB,SysTick Calibration,32,RO
+0x4002C000,LPSPI0,0x0,VERID,Version ID Register,32,RO
+,,0x04,PARAM,Parameter Register,32,RO
+,,0x10,CR,Control Register,32,RW
+,,0x14,SR,Status Register,32,W1C
+,,0x18,IER,Interrupt Enable Register,32,RW
+,,0x1C,DER,DMA Enable Register,32,RW
+,,0x20,CFGR0,Configuration Register 0,32,RW
+,,0x24,CFGR1,Configuration Register 1,32,RW
+,,0x30,DMR0,Data Match Register 0,32,RW
+,,0x34,DMR1,Data Match Register 1,32,RW
+,,0x40,CCR,Clock Configuration Register,32,RW
+,,0x58,FCR,FIFO Control Register,32,RW
+,,0x5C,FSR,FIFO Status Register,32,RO
+,,0x60,TCR,Transmit Command Register,32,RW
+,,0x64,TDR,Transmit Data Register,32,WO
+,,0x70,RSR,Receive Status Register,32,RO
+,,0x74,RDR,Receive Data Register,32,RO
+0x4002D000,LPSPI1,0x0,VERID,Version ID Register,32,RO
+,,0x04,PARAM,Parameter Register,32,RO
+,,0x10,CR,Control Register,32,RW
+,,0x14,SR,Status Register,32,W1C
+,,0x18,IER,Interrupt Enable Register,32,RW
+,,0x1C,DER,DMA Enable Register,32,RW
+,,0x20,CFGR0,Configuration Register 0,32,RW
+,,0x24,CFGR1,Configuration Register 1,32,RW
+,,0x30,DMR0,Data Match Register 0,32,RW
+,,0x34,DMR1,Data Match Register 1,32,RW
+,,0x40,CCR,Clock Configuration Register,32,RW
+,,0x58,FCR,FIFO Control Register,32,RW
+,,0x5C,FSR,FIFO Status Register,32,RO
+,,0x60,TCR,Transmit Command Register,32,RW
+,,0x64,TDR,Transmit Data Register,32,WO
+,,0x70,RSR,Receive Status Register,32,RO
+,,0x74,RDR,Receive Data Register,32,RO
+0x4002E000,LPSPI2,0x0,VERID,Version ID Register,32,RO
+,,0x04,PARAM,Parameter Register,32,RO
+,,0x10,CR,Control Register,32,RW
+,,0x14,SR,Status Register,32,W1C
+,,0x18,IER,Interrupt Enable Register,32,RW
+,,0x1C,DER,DMA Enable Register,32,RW
+,,0x20,CFGR0,Configuration Register 0,32,RW
+,,0x24,CFGR1,Configuration Register 1,32,RW
+,,0x30,DMR0,Data Match Register 0,32,RW
+,,0x34,DMR1,Data Match Register 1,32,RW
+,,0x40,CCR,Clock Configuration Register,32,RW
+,,0x58,FCR,FIFO Control Register,32,RW
+,,0x5C,FSR,FIFO Status Register,32,RO
+,,0x60,TCR,Transmit Command Register,32,RW
+,,0x64,TDR,Transmit Data Register,32,WO
+,,0x70,RSR,Receive Status Register,32,RO
+,,0x74,RDR,Receive Data Register,32,RO
