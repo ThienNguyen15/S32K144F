@@ -2,7 +2,7 @@
 
 static volatile int State = 0;
 
-void Configure()
+void Port_Config()
 {
   PCC->PCC_PORTB |= (1 << 30);
   PORTB->PORT_PCR0 |= (2 << 8);
@@ -51,7 +51,7 @@ void Crystal_Config()
 
 int main()
 {
-  Configure();
+  Port_Config();
   Crystal_Config();
 	LPUART0_Interrupt_Config();
 

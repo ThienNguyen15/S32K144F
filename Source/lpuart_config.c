@@ -52,19 +52,24 @@ void LPUART1_Interrupt_Config()
 //	setup_baud |= (52 << 0);								/* Modulo Divide Rate SBR, 8M/9600/16~52 */
 //	setup_baud |= (15 << 24);								/* Oversampling Ratio OSR, 15+1=16 */
 
-	setup_baud |= (100 << 0);								/* Modulo Divide Rate SBR, 48M/19200/25=100 */
-	setup_baud |= (24 << 24);								/* Oversampling Ratio OSR, 24+1=25 */
+//	setup_baud |= (100 << 0);								/* Modulo Divide Rate SBR, 48M/19200/25=100 */
+//	setup_baud |= (24 << 24);								/* Oversampling Ratio OSR, 24+1=25 */
 
-	setup_baud |= (0 << 13);								/* Stop Bit Number SBNS */
+//	setup_baud |= (0 << 13);								/* Stop Bit Number SBNS */
+	
+	setup_baud |= (125 << 0);								/* Modulo Divide Rate SBR, 72M/38400/15=125 */
+	setup_baud |= (14 << 24);								/* Oversampling Ratio OSR, 14+1=15 */
+
+	setup_baud &= ~(1u << 13);							/* Stop Bit Number SBNS */
 
 	LPUART1->BAUD = setup_baud;
 
 	unsigned int setup_ctrl = 0;
 
-	setup_ctrl |= (0 << 1);									/* Parity Enable PE Disable */
+//	setup_ctrl |= (0 << 1);									/* Parity Enable PE Disable */
 
-//	setup_ctrl |= (1 << 0);									/* Parity Enable PE Enable */
-//	setup_ctrl |= (1 << 1);									/* Parity Type PT Odd Parity */
+	setup_ctrl |= (1 << 0);									/* Parity Enable PE Enable */
+	setup_ctrl |= (1 << 1);									/* Parity Type PT Odd Parity */
 
 	setup_ctrl |= (1 << 4);									/* Data Characters Number 8bit 0, 9bit 1 */
 	setup_ctrl |= (1 << 18);								/* Receiver Enable RE */
@@ -75,6 +80,8 @@ void LPUART1_Interrupt_Config()
 	setup_ctrl |= (1 << 22);								/* Enable interrupt when empty buffer */
 
 	LPUART1->CTRL = setup_ctrl;
+	
+	LPUART1->STAT |= (1 << 20);							/* Clear IDLE flag */
 }
 
 void LPUART1_send_char(char data)
@@ -195,6 +202,8 @@ void LPUART0_Interrupt_Config()
 	setup_ctrl |= (1 << 22);								/* Enable interrupt when empty buffer */
 
 	LPUART0->CTRL = setup_ctrl;
+	
+	LPUART0->STAT |= (1 << 20);							/* Clear IDLE flag */
 }
 
 void LPUART0_send_char(char data)

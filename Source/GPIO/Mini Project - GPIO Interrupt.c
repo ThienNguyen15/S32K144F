@@ -1,11 +1,4 @@
-#include "GPIO_Register.h"
-#include "PCC_Register.h"
-#include "PORT_Register.h"
-#include "SCG_Register.h"
-#include "LPIT_Register.h"
-#include "LPUART_Register.h"
 #include "main.h"
-#include "software_timer.h"
 
 /* Mini Project */
 void Input_Configure()
